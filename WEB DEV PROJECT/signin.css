@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    padding-right: 0px;
+}
+
+.signin .banner{
+    width: 100%;
+    height: 100vh;
+    background: url(image/ezgif-2-fabe4f6cd1.gif);
+    background-size: cover;
+    background-position: center;
+}
+
+.signin .navbar{
+    width: 90%;
+    height: 90px;
+    margin: auto;
+    margin-bottom: 35px;
+    padding: 0px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.signin .logo{
+    width: 130px;
+    cursor: pointer;
+}
+
+.signin .search-box{
+    background: #b0dde4;
+    height: 20px;
+    padding: 10px;
+    margin-bottom: 22px;
+    outline: none;
+    border: none;
+}
+
+.signin .fa-solid, .fas{
+    top: 0;
+    right: 0;
+    height: 5%;
+    background: #E42D5E;
+    z-index: 1;
+    cursor: pointer;
+    padding: 12px;
+    margin-bottom: 22px;
+}
+
+.signin input{
+    background: transparent;
+    border: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+    width: 630px;
+    border-color: transparent;
+}
+
+.signin nav ul{
+    height: 40px;
+    font-weight: 600;
+    padding-left: 15px;
+}
+
+.signin nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 16px;
+    position: relative;
+}
+
+.signin nav ul li a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+
+nav ul li::after{
+    content: '';
+    height: 53px;
+    width: 0;
+    background: #89D6E1;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 1.0s;
+}
+
+.signin nav ul li:hover::after{
+    width: 100%;
+}
+
+.signin .cart{
+    width: 85px;
+    cursor: pointer;
+    padding-right: 0px;
+    margin-bottom: 25px;
+}
+
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    background: #b0dde4;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.center h1{
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid silver;
+}
+
+.center form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+form .txt_field{
+    position: relative;
+    border-bottom: 2px solid white;
+    margin: 30px 0;
+}
+
+.txt_field input{
+    width: 100%;
+    padding: 0 5px;
+    height: 50px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.txt_field label{
+    position: absolute;
+    top: 10%;
+    left: 5px;
+    color: darkgray;
+    transform: translate(-5%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.txt_field span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background:black;
+}
+
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label{
+    top: -5px;
+    color: black;
+}
+
+.txt_field input:focus ~ span::before,
+.txt_field input:valid ~ span::before{
+    width: 100%;
+}
+
+.pass{
+    margin: -5px 0 20px 5px;
+    color: black;
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.pass:hover{
+    text-decoration: underline;
+}
+input[type="submit"]{
+    width: 100%;
+    height: 50px;
+    border: 3px solid;
+    background: white;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #E42D5E;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+
+input[type="submit"]:hover{
+    border-color: #E42D5E;
+    transition: .5s;
+}
+
+.signup_link{
+    margin: 30px 0;
+    text-align: center;
+    font-size: 16px;
+    color: #666;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.signup_link a{
+    color: #E42D5E;
+    text-decoration: none;
+}
+
+.signup_link a:hover{
+    text-decoration: underline;
+}
+
+@media only screen and (max-width:700px){
+
+    .signin nav ul li{
+        margin: 13px 16px;
+    }
+
+    .signin .fa-solid, .fas {
+        top: 0;
+        right: 0;
+        height: 5%;
+        background: #E42D5E;
+        z-index: 1;
+        cursor: pointer;
+        padding: 8px;
+        margin-bottom: 22px;
+    }
+
+    .signin .cart{
+        margin-left: 8px;
+        width: 65px;
+        margin-bottom: 18px;
+    }
+
+    /* navigation part */
+
+    .center {
+        position: absolute;
+        top: 54%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 250px;
+        background: #b0dde4;
+        border-radius: 5px;
+        padding: 20px;
+        max-width: 100%;
+    }
+
+}

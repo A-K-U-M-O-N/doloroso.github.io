@@ -1,0 +1,348 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    padding-right: 0px;
+}
+
+.banner{
+    width: 100%;
+    height: 200vh;
+    background: #e2f0f9;
+    background-size: contain;
+    background-position: center;
+}
+
+.navbar{
+    width: 91%;
+    height: 90px;
+    margin: auto;
+    margin-bottom: 35px;
+    padding: 0px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 130px;
+    cursor: pointer;
+}
+
+.search-box{
+    background: #b0dde4;
+    height: 20px;
+    padding: 10px;
+    margin-bottom: 22px;
+    outline: none;
+    border: none;
+}
+
+.fa-solid, .fas{
+    top: 0;
+    right: 0;
+    height: 5%;
+    background: #E42D5E;
+    z-index: 1;
+    cursor: pointer;
+    padding: 12px;
+    margin-bottom: 22px;
+}
+
+input{
+    background: transparent;
+    border: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+    width: 630px;
+    border-color: transparent;
+}
+
+nav ul{
+    height: 40px;
+    font-weight: 600;
+    padding-left: 6px;
+}
+
+[id^=btn]:checked + ul{
+    display: block;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 16px;
+    position: relative;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+
+nav ul li::after{
+    content: '';
+    height: 53px;
+    width: 0;
+    background: #89D6E1;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 1.0s;
+}
+
+nav ul li:hover::after{
+    width: 100%;
+}
+
+.cart{
+    width: 85px;
+    cursor: pointer;
+    padding-right: 0px;
+    margin-bottom: 25px;
+}
+
+.grid nav{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    background: transparent;
+    width: 200px;
+    line-height: 40px;
+    padding: 8px 25px;
+}
+
+/*body*/
+
+a.btn{
+    text-decoration: none;
+    color: #e2f0f9;
+}
+
+.fas{
+    padding: 1%;
+    color: #e2f0f9;
+}
+
+.grid nav label{
+    color: #E42D5E;
+    font-size: 18px;
+    font-weight: 500;
+    display: block;
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.button span{
+    float: right;
+    line-height: 30px;
+}
+
+.grid nav ul{ 
+    top: 70px;
+    left: 0;
+    width: 100;
+    display: none;
+}
+
+.grid nav ul li{
+    line-height: 40px;
+    padding: -1px 20px;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.grid nav ul li label{
+    font-size: px;
+}
+
+
+.grid nav ul ul{
+    position: static;
+}
+
+input#btn{
+    display: none;
+}
+
+input#btn-2{
+    display: none;
+}
+
+input#btn-3{
+    display: none;
+}
+
+.grid-container {
+    display: grid;
+    gap: 50px;
+    grid-template-columns: auto auto auto;
+    background-color: transparent;
+    padding: 10px;
+    margin-left: 330px;
+    margin-right: 100px;
+}
+  
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 0px;
+    font-size: 30px;
+    text-align: center;
+    box-shadow: 10px 10px gray;
+}
+
+.grid-item:hover{
+    transform: translate(0px, -8px);
+    box-shadow: 0 3px 6px gray, 0 3px 6px gray;
+}
+
+.grid-item img{
+    width: 250px;
+    height: 205px;
+}
+
+.grid-item h3, .grid-item p, .grid-item h6, .grid-item button {
+    text-align: left;
+    color: black;
+    display: block;
+    margin: 8px;
+    font-size: 18px;
+}
+
+.grid-item p, .grid-item h6, .grid-item button {
+    text-align: left;
+    color: black;
+    display: block;
+    margin: 8px;
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.grid-item button{
+    padding: 3px;
+    color: black;
+    background: #E42D5E;
+    border: 0px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.grid-item h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*footer part*/
+
+.footer{
+    display: flex;
+    color: white;
+    background: black;
+}
+
+
+.row{
+    display: inline-block;
+    display: flex;
+    margin: 50px;
+    margin-bottom: 13px;
+}
+
+.f-column.f1 h3{
+    width: 500px;
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+
+.f-column.f2 h3{
+    width: 558px;
+    font-size: 15px;
+    padding-bottom: 20px;
+}
+
+a.btn{
+    text-decoration: none;
+    color: #e2f0f9;
+}
+
+.row p{
+    font-size: 11px;
+}
+
+.pislit{
+    width: 69px;
+    cursor: pointer;
+    padding-right: 30px;
+}
+
+.row ul li{
+    list-style: none;
+    left: 10px;
+    text-align: center;
+    margin-right: 300px;
+    margin-top: 15px;
+}
+.row li{
+    list-style: none;
+    left: 10px;
+    text-align: left;
+    margin-right:px;
+    margin-top: 15px;
+    padding-left: 120px;
+}
+
+footer{
+    text-align: center;
+    padding: 3px;
+    background-color: black;
+    color: white;
+}
+
+@media only screen and (max-width:700px){
+
+    .grid nav {
+        position: absolute;
+        top: 20%;
+        left: 37%;
+        transform: translate(-50%, -50%);
+        background: transparent;
+        width: 200px;
+        line-height: 40px;
+        padding: 9px 26px;
+    }
+
+    .grid-container {
+        display: grid;
+        gap: 0px;
+        grid-template-columns: auto auto auto;
+        background-color: transparent;
+        padding: 10px;
+        margin-left: 0px;
+        margin-right: 100px;
+        margin-top: 80px;
+        size: 10px;
+    }
+
+    nav ul li {
+        margin: 13px 16px;
+    }
+
+    .grid-item p, .grid-item h6, .grid-item button {
+        text-align: left;
+        color: black;
+        display: block;
+        margin: 8px;
+        font-size: 10px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .grid-item img {
+        width: 70px;
+        height: 70px;
+    }
+
+    h3{
+        font-size: 10px;    
+    }
+}
